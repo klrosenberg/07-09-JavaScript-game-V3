@@ -2,16 +2,104 @@
 <html>
   <head>
     <title>JavaScript DOM</title>
+    <link rel="stylesheet" href="global.css">
     <script type="text/javascript" src="global.js"></script>
   </head>
-  <body>
-    <div class="quiz">
-      <ul id="questions">
-        <li>Question 1</li>
-        <li>Question 2</li>
-        <li>Question 3</li>
-        <li>Question 4</li>
-      </ul>
-    </div>    
+  <body onload="init()">
+    <h1>QUIZ</h1>
+    <h3><a href="#">Play game?</></h3>
+
+    <ul id="questions">
+      <li><a href="#question1">Question1</a></li>
+        <div class="question_content hide" id="question1">
+          <p>
+            A magical jar of jelly beans doubles the number of jelly beans every minute. The jar is full at noon. When is it half full?
+          </p>
+          <ol>
+            <li>11:59</li>
+            <li>11:30</li>
+            <li>It is impossible to answer this question.</li>
+            <li>12:01</li>
+          </ol>
+          <br>
+          <form action="">
+          Answer:<br>
+          <input type="text" name="answer1">
+          <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="answer_content hide" id="answer1">
+          <p>The correct answer is 11:59.</p>
+        </div>
+     
+     <li><a href="#question2">Question2</a></li>
+       <div class="question_content hide" id="question2">
+         <p>
+           Kerry, Wendy and Sumeet have 12 dinosaurs. Kerry has twice as many as Wendy, and Sumeet has three times as many as Wendy. How many dinosaurs does Sumeet have?
+         </p>
+         <ol>
+           <li>4</li>
+           <li>2</li>
+           <li>6</li>
+           <li>3</li>
+         </ol>
+         <br>
+         <form action="">
+         Answer:<br>
+         <input type="text" name="answer2">
+         <input type="submit" value="Submit">
+         </form>
+       </div>
+       <div class="answer_content hide" id="answer2">
+         <p>The correct answer is 6 dinosaurs.</p>
+       </div>
+    
+     <li><a href="#question3">Question3</a></li>
+       <div class="question_content hide" id="question3">
+         <p>
+           |1|2|3|<br>|4|5|6|<br>|7|8|9|<br><br>In a game of tic-tac-toe, assuming your opponent is a savvy player, what would be a losing first move?
+         </p>
+         <ol>
+           <li>1</li>
+           <li>3</li>
+           <li>4</li>
+           <li>5</li>
+         </ol>
+         <br>
+         <form action="">
+         Answer:<br>
+         <input type="text" name="answer3">
+         <input type="submit" value="Submit">
+         </form>
+       </div>
+       <div class="answer_content hide" id="answer3">
+         <p>The correct answer is 4.</p>
+       </div>
+       
+     <li><a href="#question4">Question4</a></li>
+       <div class="question_content hide" id="question4">
+         <p>
+           You have 27 coins, each of them weighing 10 ounces. Except for one, which either weighs 9 or 11 ounces. You have a balance scale. What is the minimum number of weighings to determine which coin is different?
+         </p>
+         <ol>
+           <li>3</li>
+           <li>4</li>
+           <li>5</li>
+           <li>15</li>
+         </ol>
+         <br>
+         <form action="">
+         Answer:<br>
+         <input type="text" name="answer4">
+         <input type="submit" value="Submit">
+         </form>
+       </div>
+       <div class="answer_content hide" id="answer4">
+         <p>The correct answer is 3.</p>
+       </div>
+    </ul>
+
+
+    </body>   
   </body>
 </html>
