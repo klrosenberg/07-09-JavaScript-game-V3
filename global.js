@@ -37,35 +37,20 @@ function updateScore(){
   score;
 }
 
-function displayQuestion() {
-  var questionHTML = document.getElementById("question");
-  questionHTML.innerText = questions[questionIndex].question;
-};
-
-//
-function clearAnswer(){
-  document.getElementById("answer").value = "";
-  document.getElementById("question_result").innerText = "";
-}
-
 //
 function nextQuestion(){
-  questionIndex++;
-  displayQuestion();
-  clearAnswer();
-};
-
-
-function nextQuestion(){
-  updateScore();
   question = document.getElementById(questions[questionIndex++]);
   question.style.visibility = (question.style.visibility == "visible") ? "hidden" : "visible";
   previousQuestion = document.getElementById(questions[questionIndex]);
   previousQuestion.style.visibility = (previousQuestion.style.visibility == "hidden") ? "visible" : "hidden";
-}
+};
 
-
+//
+//
+// When 
 document.getElementById("submit").onclick=function(){
+  questionIndex++;
+  updateScore;
   nextQuestion;
   return false
 }
