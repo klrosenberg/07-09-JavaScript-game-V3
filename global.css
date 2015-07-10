@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   width: 370px;
-  margin: auto 0;
+  margin: auto;
   background-color: rgb(67, 147, 176);
 }
 
@@ -35,11 +35,7 @@ ul{
   list-style-type: none;
 }
 
-.questions{
-  padding: 10px;
-  border: 1px solid black;
+div.question.hide{
+  visibility: hidden;                          ;
 }
 
-.answer{
-  /*visibility: hidden;*/
-}
